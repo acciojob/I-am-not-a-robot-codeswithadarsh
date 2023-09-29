@@ -1,16 +1,45 @@
-/*  your css code here. If applicable */
-.images-container {
+.img1 {
+  content: url("https://picsum.photos/id/237/200/300");
+  cursor: pointer;
+}
+
+.img2 {
+  cursor: pointer;
+  content: url("https://picsum.photos/seed/picsum/200/300");
+}
+
+.img3 {
+  content: url("https://picsum.photos/200/300?grayscale");
+  cursor: pointer;
+}
+.img4 {
+  content: url("https://picsum.photos/200/300/");
+  cursor: pointer;
+}
+.img5 {
+  content: url("https://picsum.photos/200/300.jpg");
+  cursor: pointer;
+}
+
+img {
+  margin: 10px;
+  border: 5px solid #555;
+  width: 10%;
+}
+
+.flex {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.images-container img {
-  margin: 10px;
-  cursor: pointer;
-  transition: transform 0.2s;
+.selected {
+  border: 5px solid rgb(0, 195, 255);
 }
 
-.images-container img.selected {
-  transform: scale(1.1);
+p {
+  text-align: center;
+}
+
+button {
+  margin: 20px;
 }
